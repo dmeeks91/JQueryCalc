@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Calculator</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="calculator.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Expletus+Sans|Roboto+Mono:700,500italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <div class="container text-center">
+        <h1 class="title" >jQuery Calculator</h1>
+        <p class="subtitle">Perform basic mathematic operations using the power of jQuery!</p>
+    </div>
+    <div class= 'container text-center calc'>
+        <div class"row">
+            <input id="screen" class="form-control text input-lg">
+        </div>
+        <div class="row top" id="rw0">
+            <div class="col-xs-3">
+                <button id="clr" type="button" class="other btn-block btn btn-lg btn-default">C</button>
+            </div>
+            <div class="col-xs-3">
+                <button id="prnth" type="button" class="operator btn-block btn btn-lg btn-default">( )</button>
+            </div>
+            <div class="col-xs-3">
+                <button id="prcnt" type="button" class="operator cKey btn-block btn btn-lg btn-default">%</button>
+            </div>
+            <div class="col-xs-3">
+                <button id="bck" type="button" class="other btn-block btn btn-lg btn-default">&#8592;</button>
+            </div>
+        </div>
+        <div class="row" id="rw1">
+            <div class="col-xs-3">
+            <button id="num7" type="button" class="num cKey btn-block btn btn-lg btn-default">7</button>
+            </div>
+            <div class="col-xs-3">
+            <button id="num8" type="button" class="num cKey btn-block btn btn-lg btn-default">8</button>
+            </div>
+            <div class="col-xs-3">
+            <button id="num9" type="button" class="num cKey btn-block btn btn-lg btn-default">9</button>
+            </div>
+            <div class="col-xs-3">
+            <button id="plus" type="button" class="operator cKey btn-block btn btn-lg btn-default">+</button>
+            </div>
+        </div>
+        <div class="row" id="rw2">
+            <div class="col-xs-3">
+                <button id="num4" type="button" class="num cKey btn-block btn btn-lg btn-default">4</button>
+            </div>
+            <div class="col-xs-3">
+                <button id="num5" type="button" class="num cKey btn-block btn btn-lg btn-default">5</button>
+            </div>
+            <div class="col-xs-3">
+                <button id="num6" type="button" class="num cKey btn-block btn btn-lg btn-default">6</button>
+            </div>
+            <div class="col-xs-3">
+                <button id="minus" type="button" class="operator cKey btn-block btn btn-lg btn-default">-</button>
+            </div>
+        </div>
+        <div class="row" id="rw3">
+            <div class="col-xs-3">
+                <button id="num1" type="button" class="num cKey btn-block btn btn-lg btn-default">1</button>
+            </div>
+            <div class="col-xs-3">
+                <button id="num2" type="button" class="num cKey btn-block btn btn-lg btn-default">2</button>
+            </div>
+            <div class="col-xs-3">
+                <button id="num3" type="button" class="num cKey btn-block btn btn-lg btn-default">3</button>
+            </div>
+            <div class="col-xs-3">
+                <button id="multiply" type="button" class="operator cKey btn-block btn btn-lg btn-default">x</button>
+            </div>
+        </div>
+        <div class="row bottom" id="rw4">
+            <div class="col-xs-3">
+                <button id="deci" type="button" class="num btn-block btn btn-lg btn-default">.</button>
+            </div>
+            <div class="col-xs-3">
+                <button id="num0" type="button" class="num cKey btn-block btn btn-lg btn-default">0</button>
+            </div>
+            <div class="col-xs-3">
+                <button id="posNeg" type="button" class="num btn-block btn btn-lg btn-default">+/-</button>
+            </div>
+            <div class="col-xs-3">
+                <button id="div" type="button" class="operator cKey btn-block btn btn-lg btn-default">÷</button>
+            </div>
+        </div>
+            <button id="eq" type="button" class="other btn-block btn btn-lg btn-default">=</button>
+        </div>
+    </div>
+</body>
+</html>

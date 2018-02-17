@@ -1,0 +1,91 @@
+body{
+    background-color: violet;
+  }
+  .title{
+    font-family:Roboto Mono;
+    text-shadow: 4px 4px 4px white;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border-style:none;
+  }
+  .subtitle{
+    padding-bottom: 10px;
+    font-family:Roboto Mono;
+    font-style:italic;
+  }
+  .calc{
+    margin-top:25px;
+    margin-bottom:50px;
+    background-color:lightblue;
+    border-style:solid;
+    border-color:lightgreen;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-shadow: 0 0 30px black;
+    border-radius:5%;
+  }
+  .row{
+    margin-top:15px;
+    margin-bottom:15px;
+    height:65px;
+  }
+  .num{
+    background-color: lightgrey;
+    border-style: solid;
+    border-color:violet;
+    box-shadow: 0 0 5px black
+  }
+  .operator{
+    background-color: lightgreen;
+    border-style: solid;
+    border-color:violet;
+    box-shadow: 0 0 5px black;
+  }
+  .other{
+    background-color: violet;
+    border-style: solid;
+    border-color:white;
+    box-shadow: 0 0 5px black;
+  }
+  .btn-lg{
+    height:60px;
+  }
+  .input-lg{
+    height:75px;
+    border-radius:20px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+  /* media query sizing found here: http://blog.yiannistaos.com/twitter-bootstrap-3-how-to-use-media-queries/*/
+  /* Large desktops and laptops */
+  @media(min-width:1200px){
+    .calc{width: 45%;}
+    .title{font-size: 75px;}
+    .subtitle{font-size: 20px;}
+  }
+  
+  /* Portrait tablets and medium desktops */
+  @media(min-width:992px)and(max-width:1199px){
+    .calc{width: 50%;}
+    .title{font-size: 60px;}
+    .subtitle{font-size: 15px;}
+  }
+   
+  /* Portrait tablets and small desktops */
+  @media(min-width:768px)and(max-width:991px){
+    .calc{width: 65%;}
+  }
+   
+  /* Landscape phones and portrait tablets */
+  @media(max-width:767px){
+    .calc{width: 75%;}
+  }
+   
+  /* Landscape phones and smaller */
+  @media(max-width:480px){
+    .calc{width: 90%;}
+  }
+  
